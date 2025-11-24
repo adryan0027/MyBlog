@@ -1,0 +1,92 @@
+---
+title: "Atividade 3- Regressão linear"
+author: "Adryan Saraiva"
+date: "2025-11-23"
+categories: [api, code, python, correios, json]
+image: "grafico_regressao.png"
+---
+
+Neste post eu mostro como criar uma Regressão linear em *python*, onde aparece informações do grafico de forma linear.
+
+
+
+
+```{python}
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from IPython.display import Image, display
+
+# Caminhos dos arquivos enviados — prioriza os arquivos locais do post
+from pathlib import Path
+base = Path.cwd()
+X_path = base / "X.txt"
+y_path = base / "y.txt"
+
+# Suporte opcional ao /mnt/data (por exemplo quando executado em alguns ambientes)
+if not X_path.exists():
+    alt = Path("/mnt/data") / "X.txt"
+    if alt.exists():
+        X_path = alt
+if not y_path.exists():
+    alt = Path("/mnt/data") / "y.txt"
+    if alt.exists():
+        y_path = alt
+
+print("CWD:", os.getcwd())
+print("X.txt exists:", os.path.exists(X_path))
+print("y.txt exists:", os.path.exists(y_path))
+
+# ----- Leitura -----
+if X_path.exists() and y_path.exists():
+    X = np.loadtxt(str(X_path))
+    y = np.loadtxt(str(y_path))
+else:
+    print("Arquivos não encontrados — usando fallback constante.")
+    X = np.full(50, 4.6317925681770316)
+    y = np.full_like(X, 12439.153947498304)
+
+X = np.asarray(X).ravel()
+y = np.asarray(y).ravel()
+
+# Se os vetores tiverem tamanhos diferentes, truncar para o menor tamanho
+if X.size != y.size:
+    minlen = min(X.size, y.size)
+    print(f"Tamanhos diferentes: X={X.size}, y={y.size}. Truncando para {minlen}.")
+    X = X[:minlen]
+    y = y[:minlen]
+
+print("shapes:", X.shape, y.shape)
+
+# ----- Regressão -----
+if np.isclose(np.var(X), 0):
+    intercepto = float(np.mean(y))
+    inclinacao = 0.0
+else:
+    X_mat = np.vstack([np.ones_like(X), X]).T
+    beta = np.linalg.lstsq(X_mat, y, rcond=None)[0]
+    intercepto, inclinacao = float(beta[0]), float(beta[1])
+
+# ----- Gráfico -----
+df = pd.DataFrame({"x": X, "y": y})
+fig, ax = plt.subplots(figsize=(8, 4.5))
+ax.scatter(df["x"], df["y"], label="Dados")
+
+x_line = np.linspace(df["x"].min(), df["x"].max(), 200)
+ax.plot(x_line, intercepto + inclinacao * x_line, color="red", label="Ajuste")
+
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+ax.legend()
+fig.tight_layout()
+fig.savefig("grafico_regressao.png", dpi=150, bbox_inches='tight')
+# Fecha a figura para evitar que o ambiente (Jupyter/Quarto) também a renderize
+plt.close(fig)
+
+print(f"Intercepto: {intercepto:.4f}")
+print(f"Inclinação: {inclinacao:.4f}")
+
+```
+
+![Gráfico de regressão](grafico_regressao.png)

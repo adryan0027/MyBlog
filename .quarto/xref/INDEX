@@ -1,0 +1,23 @@
+{
+  "index.qmd": {
+    "index.html": "f14adcf6"
+  },
+  "about.qmd": {
+    "about.html": "1f657606"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "d1713370"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "c0c9a9c8"
+  },
+  "posts/onibus terminal/index.qmd": {
+    "index.html": "91e15225"
+  },
+  "posts/dolar/index.qmd": {
+    "index.html": "fa7810ce"
+  },
+  "posts/grafico linear/index.qmd": {
+    "index.html": "22ba41b7"
+  }
+}

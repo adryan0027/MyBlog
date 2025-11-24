@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d6b45f570ec8170ebe095ad4366b58d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d6b45f570ec8170ebe095ad4366b58d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d6b45f570ec8170ebe095ad4366b58d = L.map(
+                "map_2d6b45f570ec8170ebe095ad4366b58d",
+                {
+                    center: [-23.5299502, -46.6715388],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_48bcaaf69302031168ead9b909118388 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_48bcaaf69302031168ead9b909118388.addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+            var marker_d9e9efdf559c430b57f0c15eab17f325 = L.marker(
+                [-23.534564, -46.654302],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_190aa78f238cb157f2df2c5bd90af7ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1155f57c9a4383d6b9e5e9dc362ab7b = $(`<div id="html_f1155f57c9a4383d6b9e5e9dc362ab7b" style="width: 100.0%; height: 100.0%;">ANGELICA B/C AV   ANGELICA</div>`)[0];
+                popup_190aa78f238cb157f2df2c5bd90af7ec.setContent(html_f1155f57c9a4383d6b9e5e9dc362ab7b);
+            
+        
+
+        marker_d9e9efdf559c430b57f0c15eab17f325.bindPopup(popup_190aa78f238cb157f2df2c5bd90af7ec)
+        ;
+
+        
+    
+    
+            var marker_5292a57601fc9fba09b2a57f031f78df = L.marker(
+                [-23.525799, -46.679251],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_0f1c5780c8453280d7b07ae2e66b7c7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62af00cae3ab17f37e021541dc84427d = $(`<div id="html_62af00cae3ab17f37e021541dc84427d" style="width: 100.0%; height: 100.0%;">PARADA PALMEIRAS B/C R PADRE ANTONIO TOMAS/ AV POMPEIA</div>`)[0];
+                popup_0f1c5780c8453280d7b07ae2e66b7c7a.setContent(html_62af00cae3ab17f37e021541dc84427d);
+            
+        
+
+        marker_5292a57601fc9fba09b2a57f031f78df.bindPopup(popup_0f1c5780c8453280d7b07ae2e66b7c7a)
+        ;
+
+        
+    
+    
+            var marker_1bbbd6ea9fcba71cf8df24d551fe5227 = L.marker(
+                [-23.526523, -46.673588],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_e7dc6b0edcd59ac765f4b90525767480 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3d6016ab9910729d31e1a9e3927b1be = $(`<div id="html_a3d6016ab9910729d31e1a9e3927b1be" style="width: 100.0%; height: 100.0%;">ANTARTICA B/C PC SOUSA ARANHA/ VDTO ANTARTICA</div>`)[0];
+                popup_e7dc6b0edcd59ac765f4b90525767480.setContent(html_a3d6016ab9910729d31e1a9e3927b1be);
+            
+        
+
+        marker_1bbbd6ea9fcba71cf8df24d551fe5227.bindPopup(popup_e7dc6b0edcd59ac765f4b90525767480)
+        ;
+
+        
+    
+    
+            var marker_6d5bdf0d4e04fbc79ef99ea76ee44ddc = L.marker(
+                [-23.528131, -46.670652],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_6d3961a8831bf3e5f0de50f74c71c2d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d855311af031b054e65ad6002321fa7 = $(`<div id="html_0d855311af031b054e65ad6002321fa7" style="width: 100.0%; height: 100.0%;">BABY BARIONY B/C R DONA GERMAINE BUCHARD/ R MINISTRO GODOI</div>`)[0];
+                popup_6d3961a8831bf3e5f0de50f74c71c2d7.setContent(html_0d855311af031b054e65ad6002321fa7);
+            
+        
+
+        marker_6d5bdf0d4e04fbc79ef99ea76ee44ddc.bindPopup(popup_6d3961a8831bf3e5f0de50f74c71c2d7)
+        ;
+
+        
+    
+    
+            var marker_9b35d6b09835ddf7153aaff64865c057 = L.marker(
+                [-23.53021, -46.6669],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_8ef634b4d9bf668c369a9f7210a27ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a466d774207b4b1bc071581ff38b4fa = $(`<div id="html_4a466d774207b4b1bc071581ff38b4fa" style="width: 100.0%; height: 100.0%;">PQ. DA ÁGUA BRANCA B/C R MINISTRO GODOI/ R LINCOLN ALBUQUERQUE</div>`)[0];
+                popup_8ef634b4d9bf668c369a9f7210a27ca1.setContent(html_4a466d774207b4b1bc071581ff38b4fa);
+            
+        
+
+        marker_9b35d6b09835ddf7153aaff64865c057.bindPopup(popup_8ef634b4d9bf668c369a9f7210a27ca1)
+        ;
+
+        
+    
+    
+            var marker_9e42badd9d4752cca77e448fb83611d5 = L.marker(
+                [-23.52494, -46.698995],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_e7a61eaf49ca22d07846add22d9a12e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_134183af8bee94c97e3414b6ce0d773f = $(`<div id="html_134183af8bee94c97e3414b6ce0d773f" style="width: 100.0%; height: 100.0%;">SCIPIAO B/C R SCIPIAO/ R AURELIA</div>`)[0];
+                popup_e7a61eaf49ca22d07846add22d9a12e4.setContent(html_134183af8bee94c97e3414b6ce0d773f);
+            
+        
+
+        marker_9e42badd9d4752cca77e448fb83611d5.bindPopup(popup_e7a61eaf49ca22d07846add22d9a12e4)
+        ;
+
+        
+    
+    
+            var marker_02fefd90711a5f07bd73a36b9281fa6c = L.marker(
+                [-23.524994, -46.695297],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_91aaafef0dcdc2a073117f919f4fb251 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a698fc2e15ea7f8ca506b860e5faf223 = $(`<div id="html_a698fc2e15ea7f8ca506b860e5faf223" style="width: 100.0%; height: 100.0%;">VESPASIANO B/C R VESPASIANO/ R CAIO GRACO</div>`)[0];
+                popup_91aaafef0dcdc2a073117f919f4fb251.setContent(html_a698fc2e15ea7f8ca506b860e5faf223);
+            
+        
+
+        marker_02fefd90711a5f07bd73a36b9281fa6c.bindPopup(popup_91aaafef0dcdc2a073117f919f4fb251)
+        ;
+
+        
+    
+    
+            var marker_a71a922b1264fdeea0a74aff05db4eb3 = L.marker(
+                [-23.525029, -46.690074],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_152f90836a794c6c6af6c3e60a549dd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d42da8aa5409879c16f96fc93dfbcd69 = $(`<div id="html_d42da8aa5409879c16f96fc93dfbcd69" style="width: 100.0%; height: 100.0%;">CORNELIA R CLAUDIO/ R CRASSO</div>`)[0];
+                popup_152f90836a794c6c6af6c3e60a549dd2.setContent(html_d42da8aa5409879c16f96fc93dfbcd69);
+            
+        
+
+        marker_a71a922b1264fdeea0a74aff05db4eb3.bindPopup(popup_152f90836a794c6c6af6c3e60a549dd2)
+        ;
+
+        
+    
+    
+            var marker_619ea985995aa08369ab3136dbc99368 = L.marker(
+                [-23.523407, -46.700541],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_e142bde71a651c8a9a4ca3d37b7cb2d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_babe0ee058953c73d6481288e054ad83 = $(`<div id="html_babe0ee058953c73d6481288e054ad83" style="width: 100.0%; height: 100.0%;">CATAO B/C R FAUSTOLO/ R ROMA</div>`)[0];
+                popup_e142bde71a651c8a9a4ca3d37b7cb2d6.setContent(html_babe0ee058953c73d6481288e054ad83);
+            
+        
+
+        marker_619ea985995aa08369ab3136dbc99368.bindPopup(popup_e142bde71a651c8a9a4ca3d37b7cb2d6)
+        ;
+
+        
+    
+    
+            var marker_b09496578c1b19e74a9f8c0848265362 = L.marker(
+                [-23.52517, -46.683408],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_216f0e495015ca87aec738196575fb67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b1a2cae5dd785063f611d367300baea = $(`<div id="html_7b1a2cae5dd785063f611d367300baea" style="width: 100.0%; height: 100.0%;">SESC POMPEIA B/C R TURIASSU/ R BARAO DO BANANAL</div>`)[0];
+                popup_216f0e495015ca87aec738196575fb67.setContent(html_7b1a2cae5dd785063f611d367300baea);
+            
+        
+
+        marker_b09496578c1b19e74a9f8c0848265362.bindPopup(popup_216f0e495015ca87aec738196575fb67)
+        ;
+
+        
+    
+    
+            var marker_53d6d4c22508032a040b42b36eef68e9 = L.marker(
+                [-23.540545, -46.643624],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_d27e3b394792e10282a8cad25b77117e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39479cbf2c5816972f32b49402da3790 = $(`<div id="html_39479cbf2c5816972f32b49402da3790" style="width: 100.0%; height: 100.0%;">VITORIA B/C R VITORIA/ AL BARAO DE CAMPINAS</div>`)[0];
+                popup_d27e3b394792e10282a8cad25b77117e.setContent(html_39479cbf2c5816972f32b49402da3790);
+            
+        
+
+        marker_53d6d4c22508032a040b42b36eef68e9.bindPopup(popup_d27e3b394792e10282a8cad25b77117e)
+        ;
+
+        
+    
+    
+            var marker_2d7d3eed5f5a370a7e13f26c5f5e40d8 = L.marker(
+                [-23.532847, -46.657404],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_3da90a162c15b5d69ee926ffe1d8ee98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4707d559558e04b745e4ddd7ae9a17e1 = $(`<div id="html_4707d559558e04b745e4ddd7ae9a17e1" style="width: 100.0%; height: 100.0%;">ROSA E SILVA C/B R OLIMPIA DE ALMEIDA PRADO/ R LOPES DE OLIVEIRA</div>`)[0];
+                popup_3da90a162c15b5d69ee926ffe1d8ee98.setContent(html_4707d559558e04b745e4ddd7ae9a17e1);
+            
+        
+
+        marker_2d7d3eed5f5a370a7e13f26c5f5e40d8.bindPopup(popup_3da90a162c15b5d69ee926ffe1d8ee98)
+        ;
+
+        
+    
+    
+            var marker_6512f6397191b7e2cc2132d1132e4bd3 = L.marker(
+                [-23.538708, -46.646888],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_423ed6c71303acc437e599e2cf93e90a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6aa630a49dad784550009306cf23ef5 = $(`<div id="html_e6aa630a49dad784550009306cf23ef5" style="width: 100.0%; height: 100.0%;">ANA CINTRA B/C R DOUTOR FREDERICO STEIDEL/ AV DUQUE DE CAXIAS</div>`)[0];
+                popup_423ed6c71303acc437e599e2cf93e90a.setContent(html_e6aa630a49dad784550009306cf23ef5);
+            
+        
+
+        marker_6512f6397191b7e2cc2132d1132e4bd3.bindPopup(popup_423ed6c71303acc437e599e2cf93e90a)
+        ;
+
+        
+    
+    
+            var marker_c733d778461f5a5bb95b7c0c225b7b9e = L.marker(
+                [-23.532068, -46.660957],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_fd90addc3997838150ca9edf74abbc9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01e24852a62961026a538bbb07d50acb = $(`<div id="html_01e24852a62961026a538bbb07d50acb" style="width: 100.0%; height: 100.0%;">PACAEMBU B/C R FRANCISCO ESTACIO FORTES/ AV PACAEMBU</div>`)[0];
+                popup_fd90addc3997838150ca9edf74abbc9e.setContent(html_01e24852a62961026a538bbb07d50acb);
+            
+        
+
+        marker_c733d778461f5a5bb95b7c0c225b7b9e.bindPopup(popup_fd90addc3997838150ca9edf74abbc9e)
+        ;
+
+        
+    
+    
+            var marker_a1e43ef99ebf7aac8bd50ace1bf56863 = L.marker(
+                [-23.536318, -46.651201],
+                {
+}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_f49312c065bba3712fbeee3d7af83a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_719d86466ced897f94ff51927aa726eb = $(`<div id="html_719d86466ced897f94ff51927aa726eb" style="width: 100.0%; height: 100.0%;">NOTHMANN C/B R GENERAL JULIO MARCONDES SALGADO/ AL NOTHMANN</div>`)[0];
+                popup_f49312c065bba3712fbeee3d7af83a56.setContent(html_719d86466ced897f94ff51927aa726eb);
+            
+        
+
+        marker_a1e43ef99ebf7aac8bd50ace1bf56863.bindPopup(popup_f49312c065bba3712fbeee3d7af83a56)
+        ;
+
+        
+    
+    
+            var circle_marker_e64ad568e527e4240f872b157d213554 = L.circleMarker(
+                [-23.547649, -46.641011500000005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_677909d9c7fb60d274793878fbb1690a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da1bf6092dd4d90da48ad88caf71a5d9 = $(`<div id="html_da1bf6092dd4d90da48ad88caf71a5d9" style="width: 100.0%; height: 100.0%;">Veículo: 12615 Hora: 2025-11-24T02:10:27Z</div>`)[0];
+                popup_677909d9c7fb60d274793878fbb1690a.setContent(html_da1bf6092dd4d90da48ad88caf71a5d9);
+            
+        
+
+        circle_marker_e64ad568e527e4240f872b157d213554.bindPopup(popup_677909d9c7fb60d274793878fbb1690a)
+        ;
+
+        
+    
+    
+            var circle_marker_001135c9e451f8dd659c520293623f38 = L.circleMarker(
+                [-23.524971875, -46.691748375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_2d6b45f570ec8170ebe095ad4366b58d);
+        
+    
+        var popup_fa20b7d289b4623ea24a1fdd9b075748 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e30f974fe73b373413c0eee340757c84 = $(`<div id="html_e30f974fe73b373413c0eee340757c84" style="width: 100.0%; height: 100.0%;">Veículo: 12611 Hora: 2025-11-24T02:10:11Z</div>`)[0];
+                popup_fa20b7d289b4623ea24a1fdd9b075748.setContent(html_e30f974fe73b373413c0eee340757c84);
+            
+        
+
+        circle_marker_001135c9e451f8dd659c520293623f38.bindPopup(popup_fa20b7d289b4623ea24a1fdd9b075748)
+        ;
+
+        
+    
+</script>
+</html>
